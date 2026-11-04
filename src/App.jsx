@@ -1,3 +1,4 @@
+import { Analytics } from '@vercel/analytics/react';
 import { useEffect, useState } from 'react';
 import { AnimatePresence, motion } from 'framer-motion';
 import useTheme from './hooks/useTheme';
@@ -44,6 +45,7 @@ export default function App() {
       <Footer />
       <BackToTop />
       <Cursor />
+      <Analytics />
     </>
   );
 }
